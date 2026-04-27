@@ -28,6 +28,7 @@ a {
   color: inherit;
 }
 
+/* --- NAV --- */
 nav {
   display: flex;
   justify-content: space-between;
@@ -55,6 +56,11 @@ nav {
   color: var(--accent);
 }
 
+.nav-links a.active {
+  color: var(--accent);
+}
+
+/* --- HERO (index.html) --- */
 .hero {
   padding: 8rem 4rem 7rem;
   display: grid;
@@ -110,6 +116,7 @@ h1 em {
   margin-top: 1.5rem;
 }
 
+/* --- CLIENTS --- */
 .clients {
   padding: 2rem 4rem;
   border-bottom: 0.5px solid var(--border);
@@ -123,6 +130,7 @@ h1 em {
   flex-wrap: wrap;
 }
 
+/* --- SERVICES (index.html) --- */
 .services {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -159,6 +167,7 @@ h1 em {
   line-height: 1.9;
 }
 
+/* --- ADDITIONAL --- */
 .additional {
   padding: 3rem 4rem;
   border-bottom: 0.5px solid var(--border);
@@ -179,6 +188,156 @@ h1 em {
   border-radius: 2rem;
 }
 
+/* --- PAGE HEADER (inner pages) --- */
+.page-header {
+  padding: 5rem 4rem 3rem;
+  border-bottom: 0.5px solid var(--border);
+}
+
+.page-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.25em;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.page-title {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #f5f5f5;
+  line-height: 1.1;
+}
+
+.page-title em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+/* --- FEATURED PROJECT --- */
+.featured {
+  padding: 4rem;
+  border-bottom: 0.5px solid var(--border);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.featured-label {
+  font-size: 0.6rem;
+  letter-spacing: 0.25em;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.featured-title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #f5f5f5;
+  margin-bottom: 1rem;
+}
+
+.featured-desc {
+  font-size: 0.82rem;
+  color: var(--ink-muted);
+  line-height: 2;
+  margin-bottom: 2rem;
+}
+
+.tags {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.tag {
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  border: 0.5px solid var(--border);
+  color: var(--ink-muted);
+  padding: 0.4rem 0.9rem;
+  border-radius: 2rem;
+}
+
+.project-link {
+  display: inline-block;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  border: 0.5px solid var(--accent);
+  color: var(--accent);
+  padding: 0.8rem 1.75rem;
+}
+
+.project-link:hover {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.featured-visual {
+  background: #161616;
+  border: 0.5px solid var(--border);
+  aspect-ratio: 4/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured-visual span {
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  color: #444;
+  text-transform: uppercase;
+}
+
+/* --- PLACEHOLDER GRID --- */
+.more-label {
+  padding: 3rem 4rem 1.5rem;
+  font-size: 0.6rem;
+  letter-spacing: 0.25em;
+  color: #555;
+  text-transform: uppercase;
+}
+
+.placeholder-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 0.5px solid var(--border);
+}
+
+.placeholder-card {
+  padding: 3rem 2.5rem;
+  border-right: 0.5px solid var(--border);
+  border-bottom: 0.5px solid var(--border);
+}
+
+.placeholder-card:nth-child(3n) {
+  border-right: none;
+}
+
+.card-num {
+  font-size: 0.6rem;
+  color: #333;
+  letter-spacing: 0.2em;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #444;
+  margin-bottom: 0.75rem;
+}
+
+.card-sub {
+  font-size: 0.7rem;
+  color: #333;
+}
+
+/* --- FOOTER --- */
 footer {
   display: flex;
   justify-content: space-between;

@@ -28,16 +28,6 @@ a {
   color: inherit;
 }
 
-/* --- SECTION TAG --- */
-.section-tag {
-  font-size: 0.58rem;
-  letter-spacing: 0.25em;
-  color: var(--accent);
-  margin-bottom: 0.75rem;
-  text-transform: uppercase;
-}
-
-/* --- NAV --- */
 nav {
   display: flex;
   justify-content: space-between;
@@ -65,7 +55,6 @@ nav {
   color: var(--accent);
 }
 
-/* --- HERO --- */
 .hero {
   padding: 8rem 4rem 7rem;
   display: grid;
@@ -121,27 +110,22 @@ h1 em {
   margin-top: 1.5rem;
 }
 
-/* --- CLIENTS --- */
 .clients {
-  padding: 2.5rem 4rem;
+  padding: 2rem 4rem;
   border-bottom: 0.5px solid var(--border);
-  display: flex;
-  gap: 3rem;
-  align-items: center;
 }
 
 .clients-list {
   display: flex;
-  gap: 2.5rem;
+  gap: 2rem;
   font-size: 0.75rem;
   color: var(--ink-muted);
   flex-wrap: wrap;
 }
 
-/* --- SERVICES --- */
 .services {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   border-bottom: 0.5px solid var(--border);
 }
 
@@ -163,7 +147,7 @@ h1 em {
 }
 
 .service h2 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 400;
   color: #f0f0f0;
   margin-bottom: 1.25rem;
@@ -175,9 +159,8 @@ h1 em {
   line-height: 1.9;
 }
 
-/* --- ADDITIONAL --- */
 .additional {
-  padding: 4rem;
+  padding: 3rem 4rem;
   border-bottom: 0.5px solid var(--border);
 }
 
@@ -196,7 +179,6 @@ h1 em {
   border-radius: 2rem;
 }
 
-/* --- FOOTER --- */
 footer {
   display: flex;
   justify-content: space-between;
